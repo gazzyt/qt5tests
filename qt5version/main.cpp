@@ -1,4 +1,4 @@
-#include <QTCore>
+#include <QtCore>
 #include <iostream>
 
 int main()
