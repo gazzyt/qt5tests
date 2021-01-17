@@ -6,16 +6,16 @@
 Toolbar::Toolbar(QWidget* parent)
 :   QMainWindow(parent)
 {
-    QPixmap newpix(":/images/new.png");
-    QPixmap openpix(":/images/open.png");
-    QPixmap quitpix(":/images/quit.png");
+    const QIcon newIcon = QIcon::fromTheme("document-new", QIcon(":/images/new.png"));
+    const QIcon openIcon = QIcon::fromTheme("document-open", QIcon(":/images/open.png"));
+    const QIcon quitIcon = QIcon::fromTheme("application-exit", QIcon(":/images/quit.png"));
 
     QToolBar* toolbar = addToolBar("main toolbar");
-    toolbar->addAction(QIcon(newpix), "New File");
-    toolbar->addAction(QIcon(openpix), "Open File");
+    toolbar->addAction(newIcon, "New File");
+    toolbar->addAction(openIcon, "Open File");
     toolbar->addSeparator();
 
-    QAction* quit = toolbar->addAction(QIcon(quitpix), "Quit Application");
+    QAction* quit = toolbar->addAction(quitIcon, "Quit Application");
 
     connect(quit, &QAction::triggered, qApp, &QApplication::quit);
 }
