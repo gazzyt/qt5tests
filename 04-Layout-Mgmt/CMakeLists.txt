@@ -4,3 +4,4 @@ project ( qtlayoutmanagement )
 
 add_subdirectory(01-qtabsoluteposition)
 add_subdirectory(02-qvboxlayout)
+add_subdirectory(03-qtbuttons)
