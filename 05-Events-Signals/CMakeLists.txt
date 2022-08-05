@@ -4,3 +4,4 @@ project ( qtlayoutmanagement )
 
 add_subdirectory(01-qtclick)
 add_subdirectory(02-qtkeypress)
+add_subdirectory(03-qtmoveevent)
