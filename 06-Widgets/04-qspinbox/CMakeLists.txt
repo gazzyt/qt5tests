@@ -4,8 +4,6 @@ set(QTTEST_PROJECT_NAME qspinbox)
 
 project(${QTTEST_PROJECT_NAME})
 
-find_package(Qt6 COMPONENTS Core Widgets REQUIRED)
-
 set( BUILD_MANIFEST
     main.cpp
     spinbox.cpp

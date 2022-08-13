@@ -2,8 +2,6 @@ cmake_minimum_required( VERSION 3.16 )
 
 project("qtcursors")
 
-find_package(Qt6 COMPONENTS Core Widgets REQUIRED)
-
 set( BUILD_MANIFEST
     main.cpp
     cursors.cpp

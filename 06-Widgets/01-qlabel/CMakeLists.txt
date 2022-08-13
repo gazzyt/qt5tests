@@ -4,8 +4,6 @@ set(QTTEST_PROJECT_NAME qlabel)
 
 project(${QTTEST_PROJECT_NAME})
 
-find_package(Qt6 COMPONENTS Core Widgets REQUIRED)
-
 set( BUILD_MANIFEST
     main.cpp
     label.cpp
