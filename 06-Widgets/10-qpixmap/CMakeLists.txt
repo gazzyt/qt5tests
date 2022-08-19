@@ -21,6 +21,9 @@ target_link_libraries(${QTTEST_PROJECT_NAME} Qt6::Core Qt6::Widgets ${JPEG_LIBRA
 
 set_target_properties(${QTTEST_PROJECT_NAME} PROPERTIES AUTOMOC TRUE)
 
+qt_import_plugins(${QTTEST_PROJECT_NAME}
+    INCLUDE_BY_TYPE imageformats Qt::QJpegPlugin
+)
 
 if (WIN32)
     find_program(TOOL_WINDEPLOYQT_DEBUG NAMES windeployqt.debug.bat)
