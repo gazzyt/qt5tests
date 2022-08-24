@@ -1,5 +1,5 @@
-#ifndef PUFFT_H
-#define PUGG_H
+#ifndef PUFF_H
+#define PUFF_H
 
 #include <QWidget>
 
